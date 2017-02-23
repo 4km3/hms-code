@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+docker run                                                                     \
+  --rm                                                                         \
+  -e RANCHER_ACCESS_KEY=$RANCHER_ACCESS_KEY                                    \
+  -e RANCHER_SECRET_KEY=$RANCHER_SECRET_KEY                                    \
+  -e RANCHER_URL=$RANCHER_URL                                                  \
+  -e GITHUB_REPO=$GITHUB_REPO                                                  \
+  -e GITHUB_USER=$GITHUB_USER                                                  \
+  -e GITHUB_BRANCH=$GITHUB_BRANCH                                              \
+  -e REPO_DIR=$REPO_DIR                                                        \
+  -e STACK_NAME=$STACK_NAME                                                    \
+  -e DOCKERHUB_USER=$DOCKERHUB_USER                                            \
+  4km3/hms-deployer

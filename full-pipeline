@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+export GITHUB_REPO=hms-code
+export GITHUB_USER=CHANGEME
+export GITHUB_TOKEN=CHANGEME
+export DOCKERHUB_USER=CHANGEME
+export DOCKERHUB_PASS=CHANGEME
+export RANCHER_ACCESS_KEY=CHANGEME
+export RANCHER_SECRET_KEY=CHANGEME
+export RANCHER_URL=http://rancher.hms.rawmind.net:8080
+export STACK_NAME=CHANGEME-stack
+export REPO_DIR=ci
+
+bin/codebuilder
+bin/containerbuilder
+bin/deployer

@@ -1,0 +1,6 @@
+version: '2'
+services:
+  @STACK_NAME@:
+    image: @DOCKERHUB_USER@/@TARGET@:@VERSION@
+    labels:
+      io.rancher.container.pull_image: always
